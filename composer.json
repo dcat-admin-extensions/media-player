@@ -1,0 +1,31 @@
+{
+    "name": "abovesky/dcat-media-player",
+    "description": "Dcat Admin 音视频预览扩展",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension", "media-player"],
+    "homepage": "https://github.com/dcat-admin-extensions/media-player",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "abovesky",
+            "email": "abovesky@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Abovesky\\DcatAdmin\\MediaPlayer\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Abovesky\\DcatAdmin\\MediaPlayer\\MediaPlayerServiceProvider",
+        "laravel": {
+            "providers": [
+                "Abovesky\\DcatAdmin\\MediaPlayer\\MediaPlayerServiceProvider"
+            ]
+        }
+    }
+}
