@@ -23,7 +23,7 @@ class VideoField extends AbstractField
 
         Admin::script(
             <<<JS
-const dp = new DPlayer({
+var dp = new DPlayer({
     container: document.getElementById('$this->id'),
     video: {
         url: '$this->url',
